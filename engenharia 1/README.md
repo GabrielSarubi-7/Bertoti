@@ -1,4 +1,4 @@
-Texto 1:
+Atividade 1:
 What precisely do we mean by software engineering? What distinguishes “software engineering” from “programming” or “computer science”? And why would Google have a unique perspective to add to the corpus of previous software engineering literature written over the past 50 years?
  
 The terms “programming” and “software engineering” have been used interchangeably for quite some time in our industry, although each term has a different emphasis and different implications. University students tend to study computer science and get jobs writing code as “programmers.”
@@ -9,7 +9,7 @@ Unlike those more established engineering professions, current software engineer
 
 Comentario: O texto implica que o termo "Software engineering" ou engenharia de software, tem um tom mais sério e mais ligado ao trabalho do dia a dia, muito mais do que apenas escrever linhas de codigos mas entender e aplicar sua praticidade em tecnologias do mundo real.
 
-Texto 2:
+Atividade 2:
 Programming Over Time
 We propose that “software engineering” encompasses not just the act of writing code, but all of the tools and processes an organization uses to build and maintain that code over time. What practices can a software organization introduce that will best keep its code valuable over the long term? How can engineers make a codebase more sustainable and the software engineering discipline itself more rigorous? We don’t have fundamental answers to these questions, but we hope that Google’s collective experience over the past two decades illuminates possible paths toward finding those answers.
  
@@ -26,4 +26,11 @@ How an organization will need to adapt as it evolves
 Trade-offs and Costs
 How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth
 
-Comentario: A engenharia de software está em constante mudança e evolução, com o avanço das tecnologias novas mentalidades e abordagens quanto aos metedos são atualizados e moldados de acordo com o ambiente necessario
+Comentario: A engenharia de software está em constante mudança e evolução, com o avanço das tecnologias novas mentalidades e abordagens quanto aos metodos são atualizados e moldados de acordo com o ambiente necessario.
+
+Atividade 3:
+Exemplo 1 => a escolha entre linux e windowns na empresa, linux é um sistema operacional que te permite ter mais liberdade, segurança e é gratuito, porém ele é bem menos usados do que o windowns e exige treinamento para atingir eficiencia para a equipe;
+
+Exemplo 2=> Entre Java e Python, Java é mais rapido porém demanda de mais sintaxes e tem como foco a portabilidade para tecnologias variadas enquanto Python é de alto nivel portanto mais perto do programador enquanto é mais lenta;
+
+Exemplo 3=> HD e SSD, HD sendo mais barato porém mais lento e SSD o contrario.
