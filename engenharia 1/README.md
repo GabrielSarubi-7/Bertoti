@@ -34,3 +34,6 @@ Exemplo 1 => a escolha entre linux e windowns na empresa, linux é um sistema op
 Exemplo 2=> Entre Java e Python, Java é mais rapido porém demanda de mais sintaxes e tem como foco a portabilidade para tecnologias variadas enquanto Python é de alto nivel portanto mais perto do programador enquanto é mais lenta;
 
 Exemplo 3=> HD e SSD, HD sendo mais barato porém mais lento e SSD o contrario.
+
+Atividade 4:
+O método mvp sugere que a cada entrega feita deve haver um "minimo produto viavel" para ser apresentado ao cliente, visando entregas concisas e indicando a progressão de forma mais clara, uma versão reduzida do produto final que é aprimorada a cada entrega de forma que cada versão seja funcional.
