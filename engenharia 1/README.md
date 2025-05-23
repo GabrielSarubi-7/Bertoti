@@ -37,3 +37,105 @@ Exemplo 3=> HD e SSD, HD sendo mais barato porém mais lento e SSD o contrario.
 
 Atividade 4:
 O método mvp sugere que a cada entrega feita deve haver um "minimo produto viavel" para ser apresentado ao cliente, visando entregas concisas e indicando a progressão de forma mais clara, uma versão reduzida do produto final que é aprimorada a cada entrega de forma que cada versão seja funcional.
+
+
+
+Atividade 5:
+===== Livro.java =====
+package biblioteca;
+
+public class Livro {
+
+    private String titulo;
+    private String isbn;
+
+    public Livro(String titulo, String isbn) {
+        this.titulo = titulo;
+        this.isbn = isbn;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+}
+
+
+===== Biblioteca.java =====
+package biblioteca;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Biblioteca {
+
+    private List<Livro> livros = new ArrayList<>();
+
+    public void addLivro(Livro livro) {
+        livros.add(livro);
+    }
+
+    public Livro buscarLivroISBN(String isbn) {
+        for (Livro livro : livros) {
+            if (livro.getIsbn().equals(isbn)) {
+                return livro;
+            }
+        }
+        return null;
+    }
+
+    public List<Livro> buscarLivroTitulo(String titulo) {
+        List<Livro> encontrados = new ArrayList<>();
+        for (Livro livro : livros) {
+            if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                encontrados.add(livro);
+            }
+        }
+        return encontrados;
+    }
+
+    public List<Livro> getLivros() {
+        return livros;
+    }
+}
+
+
+===== Principal.java =====
+package biblioteca;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        Biblioteca biblioteca = new Biblioteca();
+
+        biblioteca.addLivro(new Livro("Aventuras de Java", "123456"));
+        biblioteca.addLivro(new Livro("Estruturas de Dados", "654321"));
+        biblioteca.addLivro(new Livro("Aventuras de Java", "999999"));
+
+        Livro livro1 = biblioteca.buscarLivroISBN("123456");
+        System.out.println("Livro encontrado por ISBN: " + livro1.getTitulo());
+
+        System.out.println("Livros com o título 'Aventuras de Java':");
+        for (Livro l : biblioteca.buscarLivroTitulo("Aventuras de Java")) {
+            System.out.println("- " + l.getTitulo() + " [" + l.getIsbn() + "]");
+        }
+
+        System.out.println("\nTodos os livros cadastrados:");
+        for (Livro l : biblioteca.getLivros()) {
+            System.out.println("- " + l.getTitulo() + " [" + l.getIsbn() + "]");
+        }
+    }
+}
+
+
